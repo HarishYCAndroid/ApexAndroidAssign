@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/moviedetails"
+    tools:context="gdm.moviesdbapi.View.MovieDetails">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first">
+    <TextView
+        android:id="@+id/texttitle"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:text="Title                 : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+         android:layout_toRightOf="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/first"
+        android:background="#ffffff" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/first"
+        android:id="@+id/sec">
+    <TextView
+        android:id="@+id/orgtexttitle"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:text="Original Title  : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/originalTitle"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/orgtexttitle"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sec"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/sec"
+        android:id="@+id/thr">
+    <TextView
+        android:id="@+id/rele"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:text="Release Date : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/releaseDate"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+         android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/rele"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/thr"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/thr"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/four">
+    <TextView
+        android:id="@+id/popu"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:text="Popularity      : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/popularity"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+         android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/popu"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/four"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff" />
+</RelativeLayout>
