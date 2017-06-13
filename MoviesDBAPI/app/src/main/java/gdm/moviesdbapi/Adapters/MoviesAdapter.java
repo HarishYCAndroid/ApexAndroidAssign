@@ -60,6 +60,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
                 intent.putExtra("t2",movie.getOriginalTitle().toString());
                 intent.putExtra("t3",movie.getReleaseDate().toString());
                 intent.putExtra("t4",movie.getPopularity().toString());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });
